@@ -9,7 +9,7 @@ check: test
 	$(VALGRIND) ./test
 
 test: test.o $(OBJS)
-	$(CC) $^ -o $@ $(LDFLAGS)
+	$(CC) $^ -o $@ -D_XOPEN_SOURCE
 
 %.o: %.c
 	$(CC) $< -c -o $@ $(CFLAGS)
