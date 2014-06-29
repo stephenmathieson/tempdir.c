@@ -6,7 +6,7 @@
   "keywords": ["temp", "tempdir"],
   "src": ["tempdir.h", "tempdir.c"],
   "dependencies": {
-    "stephenmathieson/str-copy.c": "*"
+    "strdup": "0.0.0"
   },
   "development": {
     "jwerle/fs.c": "*"
